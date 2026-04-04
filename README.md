@@ -29,6 +29,22 @@ To run opencode in the current directory:
 docker run -it --rm -u $(id -u):$(id -g) -v "$(pwd):/workspace" opencode
 ```
 
+### Quick Access Alias
+
+Add this alias to your `~/.zshrc` or `~/.bashrc` to run opencode from anywhere:
+
+```bash
+alias opencode='docker run -it --rm -u $(id -u):$(id -g) -v "$(pwd):/workspace" opencode'
+```
+
+Then reload your shell:
+
+```bash
+source ~/.zshrc   # or source ~/.bashrc
+```
+
+After that, simply run `opencode` from any directory.
+
 ---
 
 ## License
